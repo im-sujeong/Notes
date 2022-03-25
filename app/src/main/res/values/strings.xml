@@ -4,4 +4,15 @@
     <string name="sort_date">날짜</string>
     <string name="sort_title">제목</string>
     <string name="no_notes">작성된 노트가 없습니다.</string>
+    <string name="enter_search_keyword">검색어를 입력해주세요.</string>
+    <string name="enter_title">제목을 입력해주세요</string>
+    <string name="enter_content">내용을 입력해주세요</string>
+    <string name="enter_title_and_content">제목과 내용을 모두 입력해주세요</string>
+    <string name="complete_save">저장되었습니다🤓</string>
+    <string name="top_fix">상단 고정</string>
+    <string name="top_fix_cancel">상단 고정 해제</string>
+    <string name="delete">삭제</string>
+    <string name="delete_message">노트를 삭제하시겠습니까?</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
 </resources>

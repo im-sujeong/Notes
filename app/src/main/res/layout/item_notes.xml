@@ -23,11 +23,11 @@
         tools:text="이것은 메모 입니다."/>
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/pin"
+        android:id="@+id/fixImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_pin"
+        android:src="@drawable/ic_pin_rotate"
         android:visibility="gone"
         app:layout_constraintTop_toTopOf="@id/titleTextView"
         app:layout_constraintBottom_toBottomOf="@id/titleTextView"

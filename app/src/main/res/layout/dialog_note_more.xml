@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/fixButton"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="24dp"
+        android:textSize="14dp"
+        android:text="@string/top_fix"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendard_medium"
+        android:gravity="center_vertical"
+        android:drawablePadding="12dp"
+        android:background="?attr/selectableItemBackground"
+        app:drawableStartCompat="@drawable/ic_pin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:paddingHorizontal="24dp"
+        android:textSize="14dp"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        android:fontFamily="@font/pretendard_medium"
+        android:gravity="center_vertical"
+        android:drawablePadding="12dp"
+        android:background="?attr/selectableItemBackground"
+        app:drawableStartCompat="@drawable/ic_delete"
+        app:layout_constraintTop_toBottomOf="@id/fixButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

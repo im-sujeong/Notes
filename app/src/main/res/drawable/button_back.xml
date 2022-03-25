@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/brownish_grey">
+    <item
+        android:drawable="@drawable/rec_sol_2e2e2e_r8"
+        android:width="32dp"
+        android:height="32dp"/>
+    <item android:drawable="@drawable/ic_back"
+        android:width="18dp"
+        android:height="18dp"
+        android:gravity="center"/>
+</ripple>
