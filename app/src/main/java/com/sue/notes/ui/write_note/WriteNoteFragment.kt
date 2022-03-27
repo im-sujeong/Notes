@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.sue.notes.R
 import com.sue.notes.databinding.FragmentWriteNoteBinding
 import com.sue.notes.domain.model.Note
@@ -63,6 +64,6 @@ internal class WriteNoteFragment: BaseFragment<WriteNoteViewModel, FragmentWrite
 
     private fun handleSave() {
         Toast.makeText(requireContext(), R.string.complete_save, Toast.LENGTH_SHORT).show()
-        popBack()
+        findNavController().navigate(WriteNoteFragmentDirections.actionWriteNoteFragmentToMainFragment())
     }
 }

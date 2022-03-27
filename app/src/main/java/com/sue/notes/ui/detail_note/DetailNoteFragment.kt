@@ -23,6 +23,10 @@ internal class DetailNoteFragment: BaseFragment<DetailNoteViewModel, FragmentDet
     }
 
     private fun initViews() = with(binding){
+        backButton.setOnClickListener {
+            popBack()
+        }
+
         editButton.setOnClickListener {
             findNavController().navigate(
                 DetailNoteFragmentDirections.actionDetailNoteFragmentToWriteNoteFragment(viewModel.getNote())

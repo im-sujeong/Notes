@@ -1,6 +1,7 @@
 package com.sue.notes.ui.base
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +20,11 @@ internal abstract class BaseFragment<VM: BaseViewModel, VB: ViewBinding> : Fragm
 
     protected lateinit var fetchJob: Job
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        fetchJob = viewModel.fetchData()
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -26,11 +32,6 @@ internal abstract class BaseFragment<VM: BaseViewModel, VB: ViewBinding> : Fragm
     ): View? {
         binding = getViewBinding()
         return binding.root
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        fetchJob = viewModel.fetchData()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

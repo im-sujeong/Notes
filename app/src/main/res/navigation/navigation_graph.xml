@@ -33,6 +33,11 @@
             android:name="note"
             app:argType="com.sue.notes.domain.model.Note"
             app:nullable="true"/>
+        <action
+            android:id="@+id/action_writeNoteFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailNoteFragment"
